@@ -1,0 +1,1 @@
+import { useTranslation } from "react-i18next"; export default function Home() { const { t } = useTranslation(); return ( <div className="text-center mt-20 text-3xl font-semibold text-green-700"> {t("nav.home")} — {t("common.title")} 🌾 <p className="text-gray-600 text-lg mt-4"> A decentralized agricultural supply chain system. </p> </div> ); }
