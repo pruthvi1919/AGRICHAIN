@@ -124,6 +124,6 @@ The system follows a three-tier hybrid architecture:
 
 ## Team / Author
 
-Developed as a final year project — Dept. of AIML, BMSIT (2025-26).
+Developed as a Mini project.
 
 
