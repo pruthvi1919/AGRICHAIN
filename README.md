@@ -1,17 +1,17 @@
-# AgriChain – Supply Chain Management in Agriculture Using Blockchain
+# AgriChain - Supply Chain Management in Agriculture Using Blockchain
 
 AgriChain is a blockchain-based supply chain platform that connects **farmers, distributors, and buyers** directly, removing the exploitation caused by middlemen in traditional agricultural trade. It combines Ethereum smart contracts, a full-stack JavaScript application, and a machine learning price-prediction module to make agricultural trading transparent, secure, and accessible.
 
 ## Problem It Solves
 
-Farmers often lose a significant share of their profits to middlemen who manipulate prices and delay payments. AgriChain creates a direct, traceable chain between farmers and buyers/distributors, backed by blockchain immutability, so every transaction — from crop listing to final sale — is transparent and tamper-proof.
+Farmers often lose a significant share of their profits to middlemen who manipulate prices and delay payments. AgriChain creates a direct, traceable chain between farmers and buyers/distributors, backed by blockchain immutability, so every transaction - from crop listing to final sale - is transparent and tamper-proof.
 
 ## Key Features
 
 - **Role-based dashboards** for Farmers, Distributors, Buyers, and Admin
-- **Blockchain-backed crop listings** — every crop listing, purchase, and resale is recorded immutably via Ethereum smart contracts
+- **Blockchain-backed crop listings** - every crop listing, purchase, and resale is recorded immutably via Ethereum smart contracts
 - **Crop image upload & verification** so buyers can see what they're purchasing
-- **Full traceability** — track a crop's journey from farmer → distributor → buyer
+- **Full traceability** - track a crop's journey from farmer → distributor → buyer
 - **Real-time market price dashboard** with historical price trend charts
 - **ML-based crop price prediction** by state, commodity, and month
 - **Multilingual UI** (English, Hindi, Kannada) so farmers can use the platform in their preferred language
@@ -55,17 +55,17 @@ agri-supplychain/
 
 The system follows a three-tier hybrid architecture:
 
-1. **Frontend (React.js)** — role-specific dashboards communicate with the backend via authenticated REST API calls (JWT).
-2. **Backend (Node.js + Express)** — handles authentication, crop management, image uploads, and acts as the middleware between the frontend, MySQL, and the blockchain.
+1. **Frontend (React.js)** - role-specific dashboards communicate with the backend via authenticated REST API calls (JWT).
+2. **Backend (Node.js + Express)** - handles authentication, crop management, image uploads, and acts as the middleware between the frontend, MySQL, and the blockchain.
 3. **Dual data layer**:
    - **MySQL** stores structured, non-critical data (user profiles, crop details, market prices, images, notifications).
    - **Ethereum blockchain** (via Solidity smart contracts) immutably records crop listings, ownership transfers, and purchase transactions.
 
 ## Core Smart Contract Functions
 
-- `listCrop(details, price)` — lists a new crop on the blockchain
-- `buyCrop(cropId)` — transfers crop ownership on purchase
-- `resellCrop(cropId, newPrice)` — allows a distributor to relist a purchased crop
+- `listCrop(details, price)` - lists a new crop on the blockchain
+- `buyCrop(cropId)` - transfers crop ownership on purchase
+- `resellCrop(cropId, newPrice)` - allows a distributor to relist a purchased crop
 
 ## Getting Started
 
@@ -126,6 +126,4 @@ The system follows a three-tier hybrid architecture:
 
 Developed as a final year project — Dept. of AIML, BMSIT (2025-26).
 
----
 
-*This project is a prototype demonstrating agricultural trading on a blockchain test network (Ganache) with a MySQL-based backend infrastructure.*
