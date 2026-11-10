@@ -122,8 +122,6 @@ The system follows a three-tier hybrid architecture:
 - Government API integrations
 - Warehouse management module
 
-## Team / Author
 
-Developed as a Mini project.
 
 
